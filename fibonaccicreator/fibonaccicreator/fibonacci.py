@@ -42,7 +42,7 @@ def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
 def fibonacci_iterativetuple(number: int) -> Tuple[int, ...]:
     """Start with 0 and compute up to and including the number-th Fibonacci number using iteration and a tuple."""
     # create an empty tuple that will ultimately contain the results
-    iTuple: Tuple(int) = ()
+    iTuple: Tuple[int, ...] = ()
     # set the initial conditions of the sequence
     # Note: start at 0 and 1, not at 1 and 1 like in the course slides
     # Note: different start is to ensure consistency with this article:
