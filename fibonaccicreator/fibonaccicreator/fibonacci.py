@@ -4,6 +4,7 @@
 from typing import List
 from typing import Tuple
 
+
 def fibonacci_recursivelist(number: int) -> List[int]:
     """Start with 0 and compute up to and include the number-th Fibonacci number using recursion and a list."""
     # Reference:
@@ -14,8 +15,8 @@ def fibonacci_recursivelist(number: int) -> List[int]:
     # Recursive case: perform the computation for number - 1 and
     # then append to the list the two previous computations added together
     # Finally, return the current version of the list.
-    else: 
-        x = fibonacci_recursivelist(number - 1) 
+    else:
+        x = fibonacci_recursivelist(number - 1)
         x.append(x[-1] + x[-2])
         return x
 
@@ -26,7 +27,6 @@ def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
     # https://stackoverflow.com/questions/33325683/python-creating-a-list-of-the-first-n-fibonacci-numbers
     # Note that the reference describes the computation for lists and not tuples
     # Base case: return [0, 1] when number is either 0 or 1
-    rTuple = ()
     if number == 0 or number == 1:
         return (0, 1)
     # Recursive case: perform the computation for number - 1 and
@@ -35,8 +35,8 @@ def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
     # Finally, return the current version of the tuple.
     else:
         x = fibonacci_recursivetuple(number - 1)
-        rTuple += (x[-1] + x[-2],)
-        return rTuple        
+        x += (x[len(x) - 1] + x[len(x) - 2],)
+        return x
 
 
 def fibonacci_iterativetuple(number: int) -> Tuple[int, ...]:
@@ -60,6 +60,7 @@ def fibonacci_iterativetuple(number: int) -> Tuple[int, ...]:
     # return the final tuple that contains the fibonacci numbers
     return iTuple
 
+
 def fibonacci_iterativelist(number: int) -> List[int]:
     """Start with 0 and compute up to and including the number-th Fibonacci number using a list."""
     # create an empty list that will ultimately contain the results
@@ -72,7 +73,7 @@ def fibonacci_iterativelist(number: int) -> List[int]:
     b = 1
     # iterate from zero to the (number)th number
     for _ in range(number + 1):
-        # --> store the value of a in the list  
+        # --> store the value of a in the list
         iList.append(a)
         # --> move to the next value such that:
         # --> a gets the current value of b
