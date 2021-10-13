@@ -4,50 +4,257 @@
 
 ## Program Output
 
+### Experiment Report
+
+*Whenever possible, please use the same "small" and "large" inputs for both the List-based and Tuple-based algorithms.*
+
+*Do not run the program with the `--display` option when conducting experiments!*
+
+*If an algorithm does not work correctly and you can explain why it does not work, then please provide that output in one of the above fenced code blocks.*
+
+//TODO// Preface: how many runs, the two types of data, inputs and why, sections not working.
+
+**Summary of experiments for the Iterative algorithms**
+
+Summary of the runs for the iterativetuple algorithm:
+* Small = `poetry run fibonaccicreator --number 10000 --approach iterativetuple`
+    - R1: 33.796875 megabytes, 35.1640625 megabytes, 0.30 seconds
+    - R2: 33.79296875 megabytes, 35.06640625 megabytes, 0.29 seconds
+    - R3: 33.7890625 megabytes, 35.12109375 megabytes, 0.32 seconds
+    - R4: 33.7890625 megabytes, 35.08984375 megabytes, 0.30 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+* Large = `poetry run fibonaccicreator --number 50000 --approach iterativetuple`
+    - R1: 142.0 megabytes, 133.37890625 megabytes, 19.38 seconds
+    - R2: 142.0 megabytes, 133.3125 megabytes, 23.98 seconds
+    - R3: 142.0 megabytes, 133.3828125 megabytes, 20.34 seconds
+    - R4: 142.0 megabytes, 133.328125 megabytes, 26.21 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+Summary of the  runs for the iterativelist algorithm:
+* Small = `poetry run fibonaccicreator --number 10000 --approach iterativelist `
+    - R1: 33.515625 megabytes, 35.02734375 megabytes, 0.01 seconds
+    - R2: 33.515625 megabytes, 35.19921875 megabytes, 0.01 seconds
+    - R3: 33.515625 megabytes, 34.87890625 megabytes, 0.01 seconds
+    - R4: 33.515625 megabytes, 35.13671875 megabytes, 0.01 seconds
+    Average Overall Memory: 33.515625 megabytes
+    Average Peak Memory: 
+    Average Execution Time: 0.01 seconds
+* Large = `poetry run fibonaccicreator --number 50000 --approach iterativelist`
+    - R1: 141.6484375 megabytes, 132.25 megabytes, 0.10 seconds
+    - R2: 141.6484375 megabytes, 132.25 megabytes, 0.10 seconds
+    - R3: 141.68359375 megabytes, 132.2734375 megabytes, 0.10 seconds
+    - R4: 141.6484375 megabytes, 132.3125 megabytes, 0.11 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+
+**Summary of experiments for the Recursive algorithms**
+
+Summary of the runs for the recursivetuple algorithm:
+* Small = `poetry run fibonaccicreator --number 385 --approach recursivetuple`
+    - R1: 28.8359375 megabytes, 34.9296875 megabytes, 0.00 seconds
+    - R2: 28.84375 megabytes, 35.15234375 megabytes, 0.00 seconds
+    - R3: 28.84375 megabytes, 35.1328125 megabytes, 0.00 seconds
+    - R4: 28.83984375 megabytes, 35.0625 megabytes, 0.00 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+* Large = `poetry run fibonaccicreator --number 985 --approach recursivetuple`
+    - R1: 47.2421875 megabytes, 37.95703125 megabytes, 0.16 seconds
+    - R2: 66.5546875 megabytes, 57.03125 megabytes, 0.37 seconds
+    - R3: 62.9140625 megabytes, 53.34765625 megabytes, 0.34 seconds
+    - R4: 50.3828125 megabytes, 41.00390625 megabytes, 0.22 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+Summary of the runs for the recursivelist algorithm:
+* Small = `poetry run fibonaccicreator --number 385 --approach recursivelist`
+    - R1: 28.84375 megabytes, 34.97265625 megabytes, 0.00 seconds
+    - R2: 28.84375 megabytes, 35.14453125 megabytes, 0.00 seconds
+    - R3: 28.84375 megabytes, 35.03515625 megabytes, 0.00 seconds
+    - R4: 28.83984375 megabytes, 34.9375 megabytes, 0.00 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+* Large = `poetry run fibonaccicreator --number 985 --approach recursivelist`
+    - R1: 29.57421875 megabytes, 35.078125 megabytes, 0.00 seconds
+    - R2: 29.33203125 megabytes, 35.22265625 megabytes, 0.00 seconds
+    - R3: 29.328125 megabytes, 35.14453125 megabytes, 0.00 seconds
+    - R4: 29.828125 megabytes, 35.02734375 megabytes, 0.00 seconds
+    Average Overall Memory:
+    Average Peak Memory:
+    Average Execution Time:
+
 ### Use eight fenced code blocks to provide output from eight different runs of `fibonaccicreator` with different inputs
-
-TODO: Provide the output for running `iterativetuple` with a large and small input
-TODO: Use a fenced code block to provide the requested output
-
-TODO: Provide the output for running `iterativelist` with a large and small input
-TODO: Use a fenced code block to provide the requested output
-
-TODO: Provide the output for running `recursivetuple` with a large and small input
-TODO: Use a fenced code block to provide the requested output
-
-TODO: Provide the output for running `recursivelist` with a large and small input
-TODO: Use a fenced code block to provide the requested output
-
-TODO: If an algorithm does not work correctly and you can explain why it does not
-work, then please provide that output in one of the above fenced code blocks
-
-TODO: Whenever possible, please use the same "small" and "large" inputs for both
-the List-based and Tuple-based algorithms.
-
-TODO: Use the `--pyinstrument` command-line argument to open up a web-based display
-of the call profile from running your program. You can use this output to understand
-the other profiling information that `fibonaccicreator` can produce.
-
-TODO: Do not run the program with the `--display` option when conducting
-experiments!
-
-TODO: Document and justify your choice for the `number` parameter.
 
 #### Two outputs from running the `iterativetuple`
 
-TODO: Provide a fenced code block with the requested outputs
+The iterativetuple with a small input:
+    `poetry run fibonaccicreator --number 10000 --approach iterativetuple`
+
+```
+🧳 Awesome, the chosen type of approach is the iterativetuple!
+
+🧮 The program will compute up to the 10000th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   33.796875 megabytes
+
+Estimated peak memory according to the operating system:
+   35.1640625 megabytes
+
+Estimated execution time according to the simple timer:
+    0.30 seconds
+```
+
+The iterativetuple with a large output:
+    `poetry run fibonaccicreator --number 50000 --approach iterativetuple`
+
+```
+🧳 Awesome, the chosen type of approach is the iterativetuple!
+
+🧮 The program will compute up to the 50000th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   142.0 megabytes
+
+Estimated peak memory according to the operating system:
+   133.37890625 megabytes
+
+Estimated execution time according to the simple timer:
+    19.38 seconds
+```
 
 #### Two outputs from running the `iterativelist`
 
-TODO: Provide a fenced code block with the requested outputs
+The iterativelist with a small input:
+    `poetry run fibonaccicreator --number 10000 --approach iterativelist`
+
+```
+🧳 Awesome, the chosen type of approach is the iterativelist!
+
+🧮 The program will compute up to the 10000th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   33.515625 megabytes
+
+Estimated peak memory according to the operating system:
+   35.02734375 megabytes
+
+Estimated execution time according to the simple timer:
+    0.01 seconds
+```
+The iterativelist with a large output:
+    `poetry run fibonaccicreator --number 50000 --approach iterativelist`
+
+```
+🧳 Awesome, the chosen type of approach is the iterativelist!
+
+🧮 The program will compute up to the 50000th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   141.6484375 megabytes
+
+Estimated peak memory according to the operating system:
+   132.25 megabytes
+
+Estimated execution time according to the simple timer:
+    0.10 seconds
+```
 
 #### Two outputs from running the `recursivetuple`
 
-TODO: Provide a fenced code block with the requested outputs
+The recursivetuple with a small input:
+    `poetry run fibonaccicreator --number 385 --approach recursivetuple`
+
+```
+🧳 Awesome, the chosen type of approach is the recursivetuple!
+
+🧮 The program will compute up to the 385th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   28.8359375 megabytes
+
+Estimated peak memory according to the operating system:
+   34.9296875 megabytes
+
+Estimated execution time according to the simple timer:
+    0.00 seconds
+```
+
+The recursivetuple with a large input:
+    `poetry run fibonaccicreator --number 985 --approach recursivetuple`
+
+```
+🧳 Awesome, the chosen type of approach is the recursivetuple!
+
+🧮 The program will compute up to the 985th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   47.2421875 megabytes
+
+Estimated peak memory according to the operating system:
+   37.95703125 megabytes
+
+Estimated execution time according to the simple timer:
+    0.16 seconds
+```
 
 #### Two outputs from running the `recursivelist`
 
-TODO: Provide a fenced code block with the requested outputs
+The recursivelist with a small input:
+    `poetry run fibonaccicreator --number 385 --approach recursivelist`
+
+```
+🧳 Awesome, the chosen type of approach is the recursivelist!
+
+🧮 The program will compute up to the 385th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   28.84375 megabytes
+
+Estimated peak memory according to the operating system:
+   34.97265625 megabytes
+
+Estimated execution time according to the simple timer:
+    0.00 seconds
+```
+The recursivelist with a large input:
+    `poetry run fibonaccicreator --number 985 --approach recursivelist`
+
+```
+🧳 Awesome, the chosen type of approach is the recursivelist!
+
+🧮 The program will compute up to the 985th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   29.57421875 megabytes
+
+Estimated peak memory according to the operating system:
+   35.078125 megabytes
+
+Estimated execution time according to the simple timer:
+    0.00 seconds
+```
 
 ## Performance Analysis
 
