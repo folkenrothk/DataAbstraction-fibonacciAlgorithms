@@ -281,11 +281,11 @@ Estimated execution time according to the simple timer:
 
 From the data collect above, I conclude that the list is faster than the tuple. With both methods (recursive and iterative), the list as the data container was faster. The difference of memory is less than 1 megabyte for both inputs and for peak and overall memory size. Execution times are drastically different between the two. For the small input, the list was 96.7% faster than the tuple and with the large inputs the list was 99.5% faster than the tuple.
 
-Iterative seems faster than recursive. I am unable to draw  Though I was unable to compare directly between the recursive and iterative algorithms, the recursive seemed to be quick. This experiment will need to be conducted with a different machine. This cannot be confirma as the numbers 
+Iterative seems faster than recursive. I am unable to draw  Though I was unable to compare directly between the recursive and iterative algorithms, the iterative seemed to be quicker. Considering that the iterativelist could run with the input 10000 in 0.01 seconds, this number is much larger than any of the inputs used with the recursive method that was only recorded at 0.00 seconds. This can not be confirmed, however, for speed. Looking at the space used, the size for the memory of the smallest input (385) with the recursivelist and recursivetuple had similar peak and overall memory as the smallest input with the iterativelist and iterativetuple (10000). This experiment will need to be conducted with a different machine. This cannot be confirma as we could not test the same numbers for both methods. 
 
-The most efficient is the combination of the iteration method and list data container.
+The most efficient is the combination of the iteration method and list data container. This approach of iteration works consistentally and with very large inputs while recursion may error. The list has also proven faster consistently as seen above.
 
-One difficulty with recursion, is that their is a limitation (depending on the machine's ability) to the amount of recursion a machine can handle. This is something to consider along with deciding if an algorithm is not suitable.
+One difficulty with recursion, is that their is a limitation (depending on the machine's ability) to the amount of recursion a machine can handle. This is something to consider along with deciding if an algorithm is not suitable. It does not seem worthwhile to use tuples or recursion unless it seems appropriate for a specific purpose.
 
 ## Source Code
 
